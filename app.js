@@ -62,8 +62,8 @@ const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${p
 // MongoDB connection
 mongoose
   .connect(url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
   })
   .then(() => {
     console.log("Connected to MongoDB");
